@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShamiWorks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500;600;700&family=IBM+Plex+Sans+JP:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- LANG TOGGLE -->
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg:        #ede8f5;
+      --accent:    #6b4a9f;
+      --link:      #3a5c45;
+      --text:      #2d2040;
+      --card-bg:   #f9f7fc;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'M PLUS 2', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    header img {
+      width: 170px;
+      height: 170px;
+      object-fit: contain;
+    }
+
+    /* ── Main ────────────────────────────────────────── */
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+    }
+
+    .section-heading {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Project card ────────────────────────────────── */
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(107, 74, 159, 0.15);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(45, 32, 64, 0.07);
+      padding: 1.75rem 2rem;
+    }
+
+    .project-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-desc {
+      font-size: 0.975rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+      opacity: 0.85;
+    }
+
+    .project-link {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1.5px solid currentColor;
+      padding-bottom: 1px;
+      transition: opacity 0.15s ease;
+    }
+
+    .project-link:hover {
+      opacity: 0.7;
+    }
+
+    /* ── Footer ──────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem 2.5rem;
+      font-size: 0.825rem;
+      color: var(--text);
+      opacity: 0.75;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+
+    footer a:hover {
+      opacity: 0.7;
+    }
+
+    /* ── Responsive ──────────────────────────────────── */
+    @media (max-width: 480px) {
+      header {
+        padding: 3rem 1.5rem 2rem;
+      }
+
+      header img {
+        width: 96px;
+        height: 96px;
+      }
+
+      .project-card {
+        padding: 1.4rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/shamiworks-logo-dark.svg" alt="ShamiWorks" />
+  </header>
+
+  <main>
+    <h2 class="section-heading">Projects</h2>
+
+    <div class="project-card">
+      <div class="project-name">ShamiTab</div>
+      <p class="project-desc">Create, edit, and print shamisen tablature from your browser.</p>
+      <a class="project-link" href="https://shamiworks.github.io/ShamiTab/" target="_blank" rel="noopener noreferrer">Open ShamiTab →</a>
+    </div>
+
+    <!-- FUTURE PROJECTS -->
+  </main>
+
+  <footer>
+    <a href="https://ko-fi.com/shamiworks">Buy me a boba</a><br />
+    © ShamiWorks — CC BY 4.0
+  </footer>
+
+</body>
+</html>
